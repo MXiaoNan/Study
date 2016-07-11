@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mn.videoviewplay.MainActivity">
+
+    <!--<VideoView-->
+        <!--android:id="@+id/vv_show"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--横竖屏切换实验-->
+    <com.mn.videoviewplay.VideoViewTest
+        android:id="@+id/vv_show"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--全屏方法三：使用自定义View-->
+    <!--<com.mn.videoviewplay.VideoViewTest-->
+        <!--android:id="@+id/vv_show"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--全屏播放方法一：定的太死，不推荐-->
+    <!--<VideoView-->
+        <!--android:id="@+id/vv_show"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true" />-->
+
+    <Button
+        android:onClick="onChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="横竖屏切换" />
+</RelativeLayout>
